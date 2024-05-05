@@ -2,7 +2,6 @@
   <!-- begin::Title -->
   <h1 class="page-heading d-flex text-gray-900 fw-bold fs-3 my-0"
     [ngClass]="{'flex-column justify-content-center': appPageTitleDirection, 'align-items-center': !appPageTitleDirection}">
-    {{ title }}
     <ng-container *ngIf="appPageTitleDescription">
       <ng-container *ngIf="description$ | async as description">
 
