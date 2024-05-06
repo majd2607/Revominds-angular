@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { ClassicComponent } from '../_metronic/layout/components/toolbar/classic/classic.component';
 
 const Routing: Routes = [
   {
@@ -8,6 +9,10 @@ const Routing: Routes = [
   {
     path: 'builder',
     loadChildren: () => import('./builder/builder.module').then((m) => m.BuilderModule),
+  },
+  {
+    path: 'classifier',
+    loadChildren: () => import('./classifier/classifier.module').then((m) => m.ClassifierModule),
   },
   {
     path: 'crafted/pages/profile',
