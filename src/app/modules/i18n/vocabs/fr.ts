@@ -13,6 +13,8 @@ export const locale = {
       FEATURES: 'Fonctionnalités',
       APPS: 'Applications',
       DASHBOARD: 'Tableau de Bord',
+      CLUSTERING : 'Clustering',
+      RECOMMANDATION : "Recommandation"
     },
     AUTH: {
       GENERAL: {
