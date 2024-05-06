@@ -19,6 +19,10 @@ const Routing: Routes = [
     loadChildren: () => import('./clustering/clustering.module').then((m) => m.ClusteringModule),
   },
   {
+    path: 'recommandation',
+    loadChildren: () => import('./recommandation/recommandation.module').then((m) => m.RecommandationModule),
+  },
+  {
     path: 'crafted/pages/profile',
     loadChildren: () => import('../modules/profile/profile.module').then((m) => m.ProfileModule),
     // data: { layout: 'light-sidebar' },

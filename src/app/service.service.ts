@@ -18,5 +18,9 @@ export class Service {
     };
     return this.http.post<any>('http://localhost:5000/get_cluster', body);
   }
+
+  getRecommendations(userId: number): Observable<any> {
+    return this.http.get<any>(`http://127.0.0.1:5001/recommendations/${userId}`);
+  }
   
 }
