@@ -3,8 +3,10 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import LabelEncoder, StandardScaler
 import pandas as pd
 from sqlalchemy import create_engine
+from flask_cors import CORS  # Import CORS class
 
 app = Flask(__name__)
+CORS(app)  # Add this line to enable CORS for all routes
 
 # Database credentials and connection
 dbname = 'lastberasmiNchalah'

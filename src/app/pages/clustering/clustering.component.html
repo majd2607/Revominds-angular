@@ -1,0 +1,12 @@
+<!-- app.component.html -->
+
+<div>
+  <input type="text" [(ngModel)]="destination" placeholder="Destination">
+  <input type="text" [(ngModel)]="client" placeholder="Client">
+  <button (click)="getCluster()">Get Cluster</button>
+</div>
+
+
+<div>
+  <p>Cluster: {{ cluster }}</p>
+</div>

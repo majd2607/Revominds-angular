@@ -10,9 +10,13 @@ const Routing: Routes = [
     path: 'builder',
     loadChildren: () => import('./builder/builder.module').then((m) => m.BuilderModule),
   },
+  // {
+  //   path: 'classifier',
+  //   loadChildren: () => import('./classifier/classifier.module').then((m) => m.ClassifierModule),
+  // },
   {
-    path: 'classifier',
-    loadChildren: () => import('./classifier/classifier.module').then((m) => m.ClassifierModule),
+    path: 'clustering',
+    loadChildren: () => import('./clustering/clustering.module').then((m) => m.ClusteringModule),
   },
   {
     path: 'crafted/pages/profile',

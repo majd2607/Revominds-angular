@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ClassifierComponent } from './classifier.component';
+import { ClusteringComponent } from './clustering.component';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 
 @NgModule({
   declarations: [
-    ClassifierComponent
+    ClusteringComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule.forChild([
       {
         path: '',
-        component: ClassifierComponent,
+        component: ClusteringComponent,
       },
     ]),
   ]
 })
-export class ClassifierModule { }
+export class ClusteringModule { }
